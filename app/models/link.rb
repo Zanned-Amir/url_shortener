@@ -2,6 +2,12 @@ class Link < ApplicationRecord
   has_many :views , dependent: :destroy
   scope :recent_first, -> { order(created_at: :desc) }
 
+  after_save_commit  if: :url_previously_changed? do
+
+    MetadataJob.perform_later(to_param)
+  end
+
+
 
   validates :url , presence: true
 

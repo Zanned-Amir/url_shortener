@@ -26,6 +26,7 @@ class ShortCode
       number += index * power
 
     end
+
     number
   end
 
