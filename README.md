@@ -1,24 +1,9 @@
-# README
+# URL Shortener
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is a URL shortener application built with Ruby on Rails. The application includes URL shortening, metadata retrieval, URL statistics, and user authentication and permissions. Key features include:
 
-Things you may want to cover:
-
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+- **URL Shortening**: Shorten long URLs.
+- **Metadata Retrieval**: Uses a background job to retrieve and display metadata (description, title, and image) for each URL.
+- **URL Statistics**: Stores and displays detailed statistics for each URL, including the number of views, agent name, and IP address of each view. These statistics are visualized using charts.
+- **Pagination**: Utilizes Pagy for paginating lists of URLs.
+- **User Authentication and Permissions**: Uses Devise to handle user authentication, ensuring that users can only edit their own URLs.
