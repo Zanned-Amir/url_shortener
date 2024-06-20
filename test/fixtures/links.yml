@@ -1,15 +1,25 @@
 # Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  url: MyString
-  title: MyString
-  description: MyString
-  image: MyString
+  user: one
+  url: https://gorails.com
+  title: GoRails
+  description: Ruby on Rails screencasts for Web Developers
+  image:  https://gorails.com/assets/gorails-logo-2x-4c8b7b7
   views_count: 1
 
+
 two:
-  url: MyString
-  title: MyString
-  description: MyString
-  image: MyString
+  user: two
+  url: https://google.com
+  title:  Google
+  description: Search engine
+  image: https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png
   views_count: 1
+
+anonymous:
+  url: https://gorails.com
+  title: GoRails
+  description: Ruby on Rails screencasts for Web Developers
+  image:  https://gorails.com/assets/gorails-logo-2x-4c8b7b7
+  views_count: 0

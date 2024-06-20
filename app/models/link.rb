@@ -11,9 +11,12 @@ class Link < ApplicationRecord
 
 
   validates :url , presence: true
+  def  self.find_by_short_code(short_code)
+     find ShortCode.decode(short_code)
+  end
 
   def self.find(id)
-    super ShortCode.decode(id)
+    super (id.is_a?(Integer) ? id: Shortcode.decode(id))
   end
 
   def to_param
